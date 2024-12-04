@@ -40,7 +40,7 @@
 /* Individual navigation items */
 .navigationbar h1 {
     font-size: 2vw;               /* Font size relative to viewport width */
-    color: #ffffff;
+    color: #333;
     cursor: pointer;             /* Add pointer cursor to show it's clickable */
     margin-left: 2vw;             /* Margin between navigation items */
 }

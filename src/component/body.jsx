@@ -47,7 +47,7 @@ export default function BodyContent() {
           </p>
           <h1>{contentData.contentSpecifications[index % contentData.contentSpecifications.length].price   }</h1>
           <div className="order-now">
-         <a href='https:/linktr.ee/orientalcomputer'><img src={image} alt="Order Now" /></a>
+         <a href='https://www.linktr.ee/orientalcomputer'><img src={image} alt="Order Now" /></a>
           
             
             
