@@ -1,0 +1,84 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for header, use flexbox for layout */
+.header-container {
+    display: flex;                /* Enables flexbox */
+    align-items: center;          /* Vertically center items */
+    justify-content: space-between; /* Space out the logo and title */
+    gap: 5vw;                      /* Space between the logo and text (based on viewport width) */
+    padding: 2vw;                 /* Padding proportional to the screen width */
+               /* Adjust the top margin based on viewport height */
+}
+
+/* Logo image */
+.header-container img {
+    width: 10vw;                  /* Set logo size relative to viewport width */
+    height: auto;                 /* Maintain aspect ratio */
+}
+
+/* Header text (title) */
+.header-container h1 {
+    font-size: 3vw;               /* Set font size relative to viewport width */
+    color: #333;
+    margin-top: 0.5vh;             /* Small margin for spacing */
+}
+
+/* Navigation bar */
+.navigationbar {
+    display: flex;                /* Enables horizontal layout */
+    justify-content: flex-end;    /* Aligns items to the right */
+    align-items: center;          /* Vertically centers the content */
+    padding: 2vh 5vw;             /* Padding for spacing (vertical and horizontal) */
+    gap: 3vw;                     /* Space between navigation items */
+}
+
+/* Individual navigation items */
+.navigationbar h1 {
+    font-size: 2vw;               /* Font size relative to viewport width */
+    color: #333;
+    cursor: pointer;             /* Add pointer cursor to show it's clickable */
+    margin-left: 2vw;             /* Margin between navigation items */
+}
+
+/* Responsive design: smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;    /* Stack items vertically on smaller screens */
+        align-items: center;       /* Center items horizontally */
+        gap: 10vw;                 /* Increase space between logo and text */
+    }
+
+    .header-container img {
+        width: 30vw;               /* Larger logo size on smaller screens */
+    }
+
+    .header-container h1 {
+        font-size: 5vw;             /* Adjust font size for smaller screens */
+    }
+
+    .navigationbar {
+        flex-direction: column;    /* Stack navigation items vertically */
+        gap: 5vh;                  /* Space out navigation items vertically */
+    }
+
+    .navigationbar h1 {
+        font-size: 4vw;             /* Larger font for navigation on small screens */
+        margin-left: 0;             /* Remove left margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 6vw;             /* Increase font size further for very small screens */
+    }
+
+    .navigationbar h1 {
+        font-size: 5vw;             /* Larger font size for navigation on very small screens */
+        margin-left: 0;             /* Remove left margin */
+    }
+}

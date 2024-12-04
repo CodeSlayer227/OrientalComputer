@@ -1,0 +1,46 @@
+/* Ensure no margin or padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the body content starts from the top-left corner */
+body {
+    margin-top: 5%;
+    height: 100%;  /* Ensure the page takes full height */
+    display: flex;
+    justify-content: flex-start;  /* Align content to the start (left) */
+    align-items: flex-start;      /* Align content to the top */
+   
+}
+
+div {
+    margin-top: 0;  /* Ensure there's no extra space at the top */
+    margin-left: 0; /* Ensure there's no extra space on the left */
+}
+h1{
+    text-align: left;
+}
+.contentBox h1{
+margin-top: 2%;
+ text-align: center;
+}
+.contentBox img{
+    margin-top: 5%;
+    width: 80%;                 /* Adjust the size of the logo */
+    height: 100%;    
+}
+.contentBox p {
+    text-align: left;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;    
+}
+.order-now img{
+
+    height: 0%;
+    width: 50%;
+    margin-top: -20%;
+    margin-bottom: -10%;
+}
